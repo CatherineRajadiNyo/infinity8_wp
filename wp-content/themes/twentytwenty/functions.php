@@ -412,7 +412,7 @@ add_action( 'enqueue_block_editor_assets', 'twentytwenty_block_editor_styles', 1
 function twentytwenty_classic_editor_styles() {
 
 	$classic_editor_styles = array(
-		'/assets/css/editor-style-classic.css',
+		'/assets/css/style.min.css',
 	);
 
 	add_editor_style( $classic_editor_styles );
