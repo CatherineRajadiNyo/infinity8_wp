@@ -31,7 +31,7 @@ if(isset($args['consultant'])){
 			<div class="container h-100">
 				<div class="row h-100">
 					<div class="col-12 col-md-4 contact-us-content">
-						<img src="<?php echo THEME_ASSET_PATH; ?>images/logo@2x.png" alt="logo" class="logo mb-5" />
+						<img src="<?php echo THEME_ASSET_PATH . $logo; ?>" alt="logo" class="logo mb-5" />
 						<div class="mb-5">60 Anson Road, Wework<br />#17-01, 059441 singapore</div>
 						<div class="mb-5"><a href="mailto:sayhello@infinity8.com"
 								class="text-underline">sayhello@infinity8.com</a></div>

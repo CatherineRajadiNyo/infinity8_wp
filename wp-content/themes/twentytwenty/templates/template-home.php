@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Home Template
- * Template Post Type: post, page
+ * Template Post Type: page
  *
  * @package WordPress
  * @subpackage Twenty_Twenty
@@ -218,8 +218,8 @@ $process = get_field('process');
 <?php
 $external_js = ['https://d3js.org/d3.v4.js'];
 $additional_js = ['donut.js'];
-get_footer('', array(
+get_footer('', [
 	"additional_js" => $additional_js,
 	"external_js" => $external_js,
-));
+]);
 ?>
