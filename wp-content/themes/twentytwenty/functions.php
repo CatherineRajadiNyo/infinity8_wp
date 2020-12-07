@@ -195,7 +195,7 @@ function twentytwenty_register_styles() {
 
 }
 
-add_action( 'wp_enqueue_scripts', 'twentytwenty_register_styles' );
+// add_action( 'wp_enqueue_scripts', 'twentytwenty_register_styles' );
 
 /**
  * Register and Enqueue Scripts.
@@ -210,6 +210,10 @@ function twentytwenty_register_scripts() {
 
 	wp_enqueue_script( 'twentytwenty-js', get_template_directory_uri() . '/assets/js/index.js', array(), $theme_version, false );
 	wp_script_add_data( 'twentytwenty-js', 'async', true );
+
+	if( !defined('THEME_ASSET_PATH')){
+        define( 'THEME_ASSET_PATH', get_stylesheet_directory_uri() . '/assets/infinity8/' );
+    }
 
 }
 
@@ -340,7 +344,7 @@ function twentytwenty_skip_link() {
 	echo '<a class="skip-link screen-reader-text" href="#site-content">' . __( 'Skip to the content', 'twentytwenty' ) . '</a>';
 }
 
-add_action( 'wp_body_open', 'twentytwenty_skip_link', 5 );
+// add_action( 'wp_body_open', 'twentytwenty_skip_link', 5 );
 
 /**
  * Register widget areas.

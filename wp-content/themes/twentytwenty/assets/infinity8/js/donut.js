@@ -1,36 +1,6 @@
 $(function () {
     // Seed data to populate the donut pie chart
-    var seedData = [{
-        "label": "Determining your current financial situation",
-        "number": '01',
-        "value": 25,
-        "link": "https://facebook.github.io/react/"
-    }, {
-        "label": "Developing financial goals",
-        "number": '02',
-        "value": 25,
-        "link": "https://redux.js.org/"
-    }, {
-        "label": "Identifying alternative courses of action",
-        "number": '03',
-        "value": 25,
-        "link": "https://vuejs.org/"
-    }, {
-        "label": "Evaluating alternatives",
-        "number": '04',
-        "value": 25,
-        "link": "https://angularjs.org/"
-    }, {
-        "label": "Creating and implementing a financial action plan",
-        "number": '05',
-        "value": 25,
-        "link": "https://meteorhacks.com/meteor-js-web-framework-for-everyone"
-    }, {
-        "label": "Reevaluating and revising the plan",
-        "number": '06',
-        "value": 25,
-        "link": "https://nodejs.org/"
-    }];
+    var seedData = window.__SEED_DATA__;
 
     // Define size & radius of donut pie chart
     var width = 450,
